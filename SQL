@@ -24,4 +24,8 @@ password CHAR(60) not null,
 PRIMARY KEY(id)
 )
 
-INSERT INTO User(id, email,roles,password) VALUES (null, admin@gmail.com,ROLE_ADMIN, password_hashed);
+INSERT INTO User(id, email,roles,password) VALUES (null, "admin@gmail.com","ROLE_ADMIN", "password_hashed");
+
+INSERT INTO Car(id, brand,model,km,price,year_released,picture,date_created,description,id_seller) VALUES (null, "renault","modele 1", 30000,10000,"2010","pix",date(today),"lorem",id_seller);
+
+
