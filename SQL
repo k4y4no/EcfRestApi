@@ -23,3 +23,5 @@ roles JSON not null,
 password CHAR(60) not null,
 PRIMARY KEY(id)
 )
+
+INSERT INTO User(id, email,roles,password) VALUES (null, admin@gmail.com,ROLE_ADMIN, password_hashed);
