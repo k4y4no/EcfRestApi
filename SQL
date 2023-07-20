@@ -1,0 +1,25 @@
+CREATE DATABASE EcfGarage;
+
+CREATE TABLE Car
+(
+id BINARY(16) not null,
+brand varchar(20) not null,
+model varchar(20) not null,
+km INT not null,
+price INT not null,
+year_realeased VARCHAR(4) not null,
+picture VARCHAR(255) not null,
+date_created DATE not null,
+description VARCHAR(255) not null,
+PRIMARY KEY(id),
+FOREIGN KEY (id_seller)
+        REFERENCES User (id)
+)
+CREATE TABLE User
+(
+id BINARY(16) not null,
+email VARCHAR(180) not null,
+roles JSON not null,
+password CHAR(60) not null,
+PRIMARY KEY(id)
+)
