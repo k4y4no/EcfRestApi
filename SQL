@@ -29,3 +29,4 @@ INSERT INTO User(id, email,roles,password) VALUES (null, "admin@gmail.com","ROLE
 INSERT INTO Car(id, brand,model,km,price,year_released,picture,date_created,description,id_seller) VALUES (null, "renault","modele 1", 30000,10000,"2010","pix",date(today),"lorem",id_seller);
 
 
+SELECT * FROM Car RIGHT JOIN car ON user.id = car.id_seller
